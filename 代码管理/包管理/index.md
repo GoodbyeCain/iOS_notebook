@@ -1,5 +1,5 @@
 # 包管理
 
 * CocoaPods
-* Carthage
+- [macOS之Carthage使用](macOS之Carthage使用.md)
 * Swift Package Manager

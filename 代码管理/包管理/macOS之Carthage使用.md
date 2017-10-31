@@ -1,10 +1,17 @@
+## 0、说明
+
+* Carthage之于CocoaPods，在于去中心化，更多主动管理三方库以及二方库。
+* 对于后续模块化开发，十分方便。（即将开发的独立模块置于自己的服务上）
+* 本文是`Carthage GitHub文档翻译`+`后续实际开发经验`的整合，旨在方便理解和使用。
+
+### 参考链接
+
 * Github地址：[https://github.com/Carthage/Carthage](https://github.com/Carthage/Carthage)
 
-* Carthage：非集中式的依赖库管理工具。
 * 资源Trending索引：[https://github.com/trending?l=swift](https://github.com/trending?l=swift)
 
 
-## 作业流程：
+## 一、作业流程：
 
 1. 创建Cartfile：项目中所有到的所有frameworks均罗列于此。
 2. 运行Carthage，获取和构建上述罗列的frameworks。

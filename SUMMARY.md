@@ -92,7 +92,7 @@
         * Xcode
     * [包管理](代码管理/包管理/index.md)
         * CocoaPods
-        * Carthage
+        - [macOS之Carthage使用](代码管理/包管理/macOS之Carthage使用.md)
         * Swift Package Manager
     * [版本控制](代码管理/版本控制/index.md)
         - [Mac_For_Git_Server简易配置](代码管理/版本控制/Mac_For_Git_Server简易配置.md)
