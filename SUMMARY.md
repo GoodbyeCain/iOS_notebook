@@ -22,7 +22,7 @@
     * [UI控件](开发&进阶/UI控件/index.md)
         - [自定义View的几种方式](开发&进阶/UI控件/自定义View的几种方式.md)
     * [功能](开发&进阶/功能/index.md)
-    	 - [iphone-x适配](开发&进阶/功能/适配/iphone-x适配(完善中).md)
+    	 - [iphone-x适配(完善中)](开发&进阶/功能/适配/iphone-x适配_完善中.md)
     * [模块化方案](开发&进阶/模块化方案/index.md)
         * [多媒体开发](开发&进阶/模块化方案/多媒体开发/index.md)
         * [网络](开发&进阶/模块化方案/网络/index.md)
@@ -95,7 +95,7 @@
         * Carthage
         * Swift Package Manager
     * [版本控制](代码管理/版本控制/index.md)
-        * Git
+        - [Mac_For_Git_Server简易配置](代码管理/版本控制/Mac_For_Git_Server简易配置.md)
         * SVN
 
 -----
