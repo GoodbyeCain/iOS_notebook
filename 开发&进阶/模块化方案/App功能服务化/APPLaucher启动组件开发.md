@@ -27,6 +27,7 @@
 
 	> 1. 单一功能文件中的`+(void)load`:实现本文件负责的服务注册，只有注册至管理器中，才能被执行
 	> 2. 在`IMXEntryAPPDelegate`中实现`respondsToSelector:`和`forwardInvocation:`方法，完成消息的转发；在`IMXAPPServiceManager`文件中，将转发进来的方法，批量交由`功能文件`来执行。
+	> 3. 附：使用`NSProxy`技术，同样可以实现服务分发功能。
 	
 2. 单一功能文件执行的优先级：目前使用Low、Default、High三种优先级来定义文件执行的顺序。
 

@@ -92,6 +92,16 @@
 	}
 	```
 	
+4. 适配时机（在ViewController中）
+
+	```
+	- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    //约束、frame布局设置
+    //......
+    }
+	```
+	
 ## 五、UI细节
 
 1. 屏幕大小（注：iPhonex与iphone6等宽，却需要@3x的图片）
