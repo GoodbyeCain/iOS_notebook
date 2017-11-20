@@ -46,3 +46,9 @@
 1. 去除.git链接仓库
 
 	> find . -name ".git" | xargs rm -Rf
+
+2. 获取本地RSA子串：
+
+	> cat ~/.ssh/id_rsa.pub
+	>
+	> 生成：ssh-keygen -t rsa
