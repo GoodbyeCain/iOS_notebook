@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        audioSet = IMXAudioSet.init()
-        audioSet?.play(path: "jingmeng",type: "mp3")
     }
 
     override func didReceiveMemoryWarning() {

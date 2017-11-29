@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import AVFoundation
+import AudioKit
+import AudioKitUI
 class IMXAudioSet {
-    var audioPlayer: AVAudioPlayer?
+    
 }
