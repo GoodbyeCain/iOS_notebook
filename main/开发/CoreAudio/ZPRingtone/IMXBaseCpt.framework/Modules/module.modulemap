@@ -1,0 +1,6 @@
+framework module IMXBaseCpt {
+  umbrella header "IMXBaseCpt.h"
+
+  export *
+  module * { export * }
+}

@@ -8,27 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		273DB9492F41AEEBFFDA9523 /* libPods-ZPRingtone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8298BC78D1FE45DC69E9A2 /* libPods-ZPRingtone.a */; };
-		78ECC4AF1FD0457A005ED434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ECC4AE1FD0457A005ED434 /* AppDelegate.m */; };
-		78ECC4B21FD0457A005ED434 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ECC4B11FD0457A005ED434 /* ViewController.m */; };
-		78ECC4B51FD0457A005ED434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ECC4B31FD0457A005ED434 /* Main.storyboard */; };
 		78ECC4B71FD0457A005ED434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ECC4B61FD0457A005ED434 /* Assets.xcassets */; };
 		78ECC4BA1FD0457A005ED434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ECC4B81FD0457A005ED434 /* LaunchScreen.storyboard */; };
 		78ECC4BD1FD0457A005ED434 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ECC4BC1FD0457A005ED434 /* main.m */; };
+		A19F47EC1FD12EAB00527199 /* ZPSTabBarLaunchService.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47D21FD12D6C00527199 /* ZPSTabBarLaunchService.m */; };
+		A19F47EF1FD12EDF00527199 /* CTMediator+ZPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47EE1FD12EDF00527199 /* CTMediator+ZPCommon.m */; };
+		A19F47F01FD12F4600527199 /* ZPSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47D41FD12D6C00527199 /* ZPSTabBarViewController.m */; };
+		A19F47F11FD12F5D00527199 /* ZPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47CF1FD12D6C00527199 /* ZPNavigationController.m */; };
+		A19F47F21FD12F6600527199 /* ZPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47CD1FD12D6C00527199 /* ZPBaseViewController.m */; };
+		A19F47F31FD12F7100527199 /* ZPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47E51FD12D7400527199 /* ZPHomeViewController.m */; };
+		A19F47F41FD130B100527199 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A19F47CA1FD12D6C00527199 /* 1@2x.png */; };
+		A19F47F51FD130B300527199 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A19F47CB1FD12D6C00527199 /* 2@2x.png */; };
+		A19F47FC1FD136D800527199 /* IMXBaseCpt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19F47FB1FD136D800527199 /* IMXBaseCpt.framework */; };
+		A19F47FD1FD136D800527199 /* IMXBaseCpt.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A19F47FB1FD136D800527199 /* IMXBaseCpt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A19F47FE1FD1376500527199 /* ZPSTabbarConfigs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A19F47D01FD12D6C00527199 /* ZPSTabbarConfigs.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A19F47BA1FD128F100527199 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A19F47FD1FD136D800527199 /* IMXBaseCpt.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		362CA4D47E5ED18842990D81 /* Pods-ZPRingtone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZPRingtone.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZPRingtone/Pods-ZPRingtone.release.xcconfig"; sourceTree = "<group>"; };
 		46D323705745EF75CC8AC34F /* Pods-ZPRingtone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZPRingtone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZPRingtone/Pods-ZPRingtone.debug.xcconfig"; sourceTree = "<group>"; };
 		78ECC4AA1FD0457A005ED434 /* ZPRingtone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPRingtone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		78ECC4AD1FD0457A005ED434 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		78ECC4AE1FD0457A005ED434 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		78ECC4B01FD0457A005ED434 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		78ECC4B11FD0457A005ED434 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		78ECC4B41FD0457A005ED434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78ECC4B61FD0457A005ED434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78ECC4B91FD0457A005ED434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78ECC4BB1FD0457A005ED434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78ECC4BC1FD0457A005ED434 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A19F47BE1FD12B5D00527199 /* ZPRingtone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZPRingtone-Prefix.pch"; sourceTree = "<group>"; };
+		A19F47CA1FD12D6C00527199 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		A19F47CB1FD12D6C00527199 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		A19F47CC1FD12D6C00527199 /* ZPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPBaseViewController.h; sourceTree = "<group>"; };
+		A19F47CD1FD12D6C00527199 /* ZPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPBaseViewController.m; sourceTree = "<group>"; };
+		A19F47CE1FD12D6C00527199 /* ZPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPNavigationController.h; sourceTree = "<group>"; };
+		A19F47CF1FD12D6C00527199 /* ZPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPNavigationController.m; sourceTree = "<group>"; };
+		A19F47D01FD12D6C00527199 /* ZPSTabbarConfigs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ZPSTabbarConfigs.plist; sourceTree = "<group>"; };
+		A19F47D11FD12D6C00527199 /* ZPSTabBarLaunchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPSTabBarLaunchService.h; sourceTree = "<group>"; };
+		A19F47D21FD12D6C00527199 /* ZPSTabBarLaunchService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPSTabBarLaunchService.m; sourceTree = "<group>"; };
+		A19F47D31FD12D6C00527199 /* ZPSTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPSTabBarViewController.h; sourceTree = "<group>"; };
+		A19F47D41FD12D6C00527199 /* ZPSTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPSTabBarViewController.m; sourceTree = "<group>"; };
+		A19F47DF1FD12D6C00527199 /* ZPColorDefineKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPColorDefineKit.h; sourceTree = "<group>"; };
+		A19F47E01FD12D6C00527199 /* ZPFontMacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPFontMacroDefine.h; sourceTree = "<group>"; };
+		A19F47E11FD12D6C00527199 /* ZPMacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPMacroDefine.h; sourceTree = "<group>"; };
+		A19F47E41FD12D7400527199 /* ZPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPHomeViewController.h; sourceTree = "<group>"; };
+		A19F47E51FD12D7400527199 /* ZPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPHomeViewController.m; sourceTree = "<group>"; };
+		A19F47ED1FD12EDF00527199 /* CTMediator+ZPCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+ZPCommon.h"; sourceTree = "<group>"; };
+		A19F47EE1FD12EDF00527199 /* CTMediator+ZPCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+ZPCommon.m"; sourceTree = "<group>"; };
+		A19F47FB1FD136D800527199 /* IMXBaseCpt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMXBaseCpt.framework; sourceTree = "<group>"; };
 		FD8298BC78D1FE45DC69E9A2 /* libPods-ZPRingtone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZPRingtone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19F47FC1FD136D800527199 /* IMXBaseCpt.framework in Frameworks */,
 				273DB9492F41AEEBFFDA9523 /* libPods-ZPRingtone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +94,7 @@
 		78ECC4A11FD04577005ED434 = {
 			isa = PBXGroup;
 			children = (
+				A19F47FB1FD136D800527199 /* IMXBaseCpt.framework */,
 				78ECC4AC1FD0457A005ED434 /* ZPRingtone */,
 				78ECC4AB1FD0457A005ED434 /* Products */,
 				716BF47D1EF73FE30CB91B44 /* Pods */,
@@ -74,17 +113,167 @@
 		78ECC4AC1FD0457A005ED434 /* ZPRingtone */ = {
 			isa = PBXGroup;
 			children = (
-				78ECC4AD1FD0457A005ED434 /* AppDelegate.h */,
-				78ECC4AE1FD0457A005ED434 /* AppDelegate.m */,
-				78ECC4B01FD0457A005ED434 /* ViewController.h */,
-				78ECC4B11FD0457A005ED434 /* ViewController.m */,
-				78ECC4B31FD0457A005ED434 /* Main.storyboard */,
+				A19F47E21FD12D7400527199 /* ZPHome */,
+				A19F47C71FD12D6C00527199 /* ZPCommon */,
 				78ECC4B61FD0457A005ED434 /* Assets.xcassets */,
 				78ECC4B81FD0457A005ED434 /* LaunchScreen.storyboard */,
 				78ECC4BB1FD0457A005ED434 /* Info.plist */,
 				78ECC4BC1FD0457A005ED434 /* main.m */,
+				A19F47BE1FD12B5D00527199 /* ZPRingtone-Prefix.pch */,
 			);
 			path = ZPRingtone;
+			sourceTree = "<group>";
+		};
+		A19F47C71FD12D6C00527199 /* ZPCommon */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47C81FD12D6C00527199 /* Biz */,
+				A19F47DA1FD12D6C00527199 /* Cpts */,
+				A19F47DD1FD12D6C00527199 /* Module */,
+				A19F47DE1FD12D6C00527199 /* Utils */,
+			);
+			path = ZPCommon;
+			sourceTree = "<group>";
+		};
+		A19F47C81FD12D6C00527199 /* Biz */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47C91FD12D6C00527199 /* BaseUI */,
+				A19F47D51FD12D6C00527199 /* Routers */,
+			);
+			path = Biz;
+			sourceTree = "<group>";
+		};
+		A19F47C91FD12D6C00527199 /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47CA1FD12D6C00527199 /* 1@2x.png */,
+				A19F47CB1FD12D6C00527199 /* 2@2x.png */,
+				A19F47CC1FD12D6C00527199 /* ZPBaseViewController.h */,
+				A19F47CD1FD12D6C00527199 /* ZPBaseViewController.m */,
+				A19F47CE1FD12D6C00527199 /* ZPNavigationController.h */,
+				A19F47CF1FD12D6C00527199 /* ZPNavigationController.m */,
+				A19F47D01FD12D6C00527199 /* ZPSTabbarConfigs.plist */,
+				A19F47D11FD12D6C00527199 /* ZPSTabBarLaunchService.h */,
+				A19F47D21FD12D6C00527199 /* ZPSTabBarLaunchService.m */,
+				A19F47D31FD12D6C00527199 /* ZPSTabBarViewController.h */,
+				A19F47D41FD12D6C00527199 /* ZPSTabBarViewController.m */,
+			);
+			path = BaseUI;
+			sourceTree = "<group>";
+		};
+		A19F47D51FD12D6C00527199 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47ED1FD12EDF00527199 /* CTMediator+ZPCommon.h */,
+				A19F47EE1FD12EDF00527199 /* CTMediator+ZPCommon.m */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		A19F47DA1FD12D6C00527199 /* Cpts */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47DB1FD12D6C00527199 /* Funcs */,
+				A19F47DC1FD12D6C00527199 /* UIs */,
+			);
+			path = Cpts;
+			sourceTree = "<group>";
+		};
+		A19F47DB1FD12D6C00527199 /* Funcs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Funcs;
+			sourceTree = "<group>";
+		};
+		A19F47DC1FD12D6C00527199 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		A19F47DD1FD12D6C00527199 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A19F47DE1FD12D6C00527199 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47DF1FD12D6C00527199 /* ZPColorDefineKit.h */,
+				A19F47E01FD12D6C00527199 /* ZPFontMacroDefine.h */,
+				A19F47E11FD12D6C00527199 /* ZPMacroDefine.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A19F47E21FD12D7400527199 /* ZPHome */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47E31FD12D7400527199 /* Biz */,
+				A19F47E61FD12D7400527199 /* Cpts */,
+				A19F47E91FD12D7400527199 /* Module */,
+				A19F47EA1FD12D7400527199 /* Public */,
+				A19F47EB1FD12D7400527199 /* Utils */,
+			);
+			path = ZPHome;
+			sourceTree = "<group>";
+		};
+		A19F47E31FD12D7400527199 /* Biz */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47E41FD12D7400527199 /* ZPHomeViewController.h */,
+				A19F47E51FD12D7400527199 /* ZPHomeViewController.m */,
+			);
+			path = Biz;
+			sourceTree = "<group>";
+		};
+		A19F47E61FD12D7400527199 /* Cpts */ = {
+			isa = PBXGroup;
+			children = (
+				A19F47E71FD12D7400527199 /* Funcs */,
+				A19F47E81FD12D7400527199 /* UIs */,
+			);
+			path = Cpts;
+			sourceTree = "<group>";
+		};
+		A19F47E71FD12D7400527199 /* Funcs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Funcs;
+			sourceTree = "<group>";
+		};
+		A19F47E81FD12D7400527199 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		A19F47E91FD12D7400527199 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A19F47EA1FD12D7400527199 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		A19F47EB1FD12D7400527199 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D1EA2ECBAFDAB1CD097FAFC1 /* Frameworks */ = {
@@ -108,6 +297,7 @@
 				78ECC4A81FD0457A005ED434 /* Resources */,
 				929AEC3AC07087A84C26EB19 /* [CP] Embed Pods Frameworks */,
 				2D1BC37B95FA7793764A4370 /* [CP] Copy Pods Resources */,
+				A19F47BA1FD128F100527199 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,9 +346,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19F47F41FD130B100527199 /* 1@2x.png in Resources */,
 				78ECC4BA1FD0457A005ED434 /* LaunchScreen.storyboard in Resources */,
 				78ECC4B71FD0457A005ED434 /* Assets.xcassets in Resources */,
-				78ECC4B51FD0457A005ED434 /* Main.storyboard in Resources */,
+				A19F47FE1FD1376500527199 /* ZPSTabbarConfigs.plist in Resources */,
+				A19F47F51FD130B300527199 /* 2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +387,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		929AEC3AC07087A84C26EB19 /* [CP] Embed Pods Frameworks */ = {
@@ -225,23 +417,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78ECC4B21FD0457A005ED434 /* ViewController.m in Sources */,
+				A19F47F01FD12F4600527199 /* ZPSTabBarViewController.m in Sources */,
+				A19F47EF1FD12EDF00527199 /* CTMediator+ZPCommon.m in Sources */,
+				A19F47F31FD12F7100527199 /* ZPHomeViewController.m in Sources */,
+				A19F47F11FD12F5D00527199 /* ZPNavigationController.m in Sources */,
+				A19F47F21FD12F6600527199 /* ZPBaseViewController.m in Sources */,
+				A19F47EC1FD12EAB00527199 /* ZPSTabBarLaunchService.m in Sources */,
 				78ECC4BD1FD0457A005ED434 /* main.m in Sources */,
-				78ECC4AF1FD0457A005ED434 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		78ECC4B31FD0457A005ED434 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78ECC4B41FD0457A005ED434 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		78ECC4B81FD0457A005ED434 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,10 +549,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46D323705745EF75CC8AC34F /* Pods-ZPRingtone.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/$(PROJECT)-Prefix.pch";
 				INFOPLIST_FILE = ZPRingtone/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pan.ZPRingtone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,10 +571,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 362CA4D47E5ED18842990D81 /* Pods-ZPRingtone.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/$(PROJECT)-Prefix.pch";
 				INFOPLIST_FILE = ZPRingtone/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pan.ZPRingtone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
