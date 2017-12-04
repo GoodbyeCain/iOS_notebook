@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		273DB9492F41AEEBFFDA9523 /* libPods-ZPRingtone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8298BC78D1FE45DC69E9A2 /* libPods-ZPRingtone.a */; };
+		7804695B1FD58F6200FF3D1D /* Organ.wav in Resources */ = {isa = PBXBuildFile; fileRef = 780469591FD58F6100FF3D1D /* Organ.wav */; };
+		7804695C1FD58F6200FF3D1D /* jingmeng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7804695A1FD58F6200FF3D1D /* jingmeng.mp3 */; };
+		780469631FD59C0F00FF3D1D /* ZPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47E51FD12D7400527199 /* ZPHomeViewController.m */; };
+		780469641FD59C7A00FF3D1D /* TchaikovskyExample2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7804695D1FD59B0200FF3D1D /* TchaikovskyExample2.m4a */; };
+		788FA8FB1FD583D60012BE64 /* IMXAudioFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 788FA8FA1FD583D60012BE64 /* IMXAudioFileManager.m */; };
+		788FA8FF1FD584E20012BE64 /* FDWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FA8FC1FD584E20012BE64 /* FDWaveformView.swift */; };
+		788FA9001FD584E20012BE64 /* FDAudioContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FA8FD1FD584E20012BE64 /* FDAudioContext.swift */; };
+		788FA9011FD584E20012BE64 /* FDWaveformRenderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FA8FE1FD584E20012BE64 /* FDWaveformRenderOperation.swift */; };
 		78ECC4B71FD0457A005ED434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ECC4B61FD0457A005ED434 /* Assets.xcassets */; };
 		78ECC4BA1FD0457A005ED434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ECC4B81FD0457A005ED434 /* LaunchScreen.storyboard */; };
 		78ECC4BD1FD0457A005ED434 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ECC4BC1FD0457A005ED434 /* main.m */; };
@@ -16,7 +24,6 @@
 		A19F47F01FD12F4600527199 /* ZPSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47D41FD12D6C00527199 /* ZPSTabBarViewController.m */; };
 		A19F47F11FD12F5D00527199 /* ZPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47CF1FD12D6C00527199 /* ZPNavigationController.m */; };
 		A19F47F21FD12F6600527199 /* ZPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47CD1FD12D6C00527199 /* ZPBaseViewController.m */; };
-		A19F47F31FD12F7100527199 /* ZPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F47E51FD12D7400527199 /* ZPHomeViewController.m */; };
 		A19F47F41FD130B100527199 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A19F47CA1FD12D6C00527199 /* 1@2x.png */; };
 		A19F47F51FD130B300527199 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A19F47CB1FD12D6C00527199 /* 2@2x.png */; };
 		A19F47FC1FD136D800527199 /* IMXBaseCpt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19F47FB1FD136D800527199 /* IMXBaseCpt.framework */; };
@@ -41,6 +48,15 @@
 /* Begin PBXFileReference section */
 		362CA4D47E5ED18842990D81 /* Pods-ZPRingtone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZPRingtone.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZPRingtone/Pods-ZPRingtone.release.xcconfig"; sourceTree = "<group>"; };
 		46D323705745EF75CC8AC34F /* Pods-ZPRingtone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZPRingtone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZPRingtone/Pods-ZPRingtone.debug.xcconfig"; sourceTree = "<group>"; };
+		780469591FD58F6100FF3D1D /* Organ.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Organ.wav; sourceTree = "<group>"; };
+		7804695A1FD58F6200FF3D1D /* jingmeng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jingmeng.mp3; sourceTree = "<group>"; };
+		7804695D1FD59B0200FF3D1D /* TchaikovskyExample2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = TchaikovskyExample2.m4a; sourceTree = "<group>"; };
+		788FA8E91FD581720012BE64 /* ZPRingtone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZPRingtone-Bridging-Header.h"; sourceTree = "<group>"; };
+		788FA8F91FD583D60012BE64 /* IMXAudioFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMXAudioFileManager.h; sourceTree = "<group>"; };
+		788FA8FA1FD583D60012BE64 /* IMXAudioFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMXAudioFileManager.m; sourceTree = "<group>"; };
+		788FA8FC1FD584E20012BE64 /* FDWaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDWaveformView.swift; sourceTree = "<group>"; };
+		788FA8FD1FD584E20012BE64 /* FDAudioContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDAudioContext.swift; sourceTree = "<group>"; };
+		788FA8FE1FD584E20012BE64 /* FDWaveformRenderOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDWaveformRenderOperation.swift; sourceTree = "<group>"; };
 		78ECC4AA1FD0457A005ED434 /* ZPRingtone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPRingtone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ECC4B61FD0457A005ED434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78ECC4B91FD0457A005ED434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +107,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		788FA8F11FD582D80012BE64 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				788FA8F21FD582D80012BE64 /* 3rd */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		788FA8F21FD582D80012BE64 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				788FA8FD1FD584E20012BE64 /* FDAudioContext.swift */,
+				788FA8FE1FD584E20012BE64 /* FDWaveformRenderOperation.swift */,
+				788FA8FC1FD584E20012BE64 /* FDWaveformView.swift */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
 		78ECC4A11FD04577005ED434 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +161,7 @@
 		A19F47C71FD12D6C00527199 /* ZPCommon */ = {
 			isa = PBXGroup;
 			children = (
+				788FA8F11FD582D80012BE64 /* Libs */,
 				A19F47C81FD12D6C00527199 /* Biz */,
 				A19F47DA1FD12D6C00527199 /* Cpts */,
 				A19F47DD1FD12D6C00527199 /* Module */,
@@ -183,6 +218,8 @@
 		A19F47DB1FD12D6C00527199 /* Funcs */ = {
 			isa = PBXGroup;
 			children = (
+				788FA8F91FD583D60012BE64 /* IMXAudioFileManager.h */,
+				788FA8FA1FD583D60012BE64 /* IMXAudioFileManager.m */,
 			);
 			path = Funcs;
 			sourceTree = "<group>";
@@ -217,7 +254,6 @@
 				A19F47E31FD12D7400527199 /* Biz */,
 				A19F47E61FD12D7400527199 /* Cpts */,
 				A19F47E91FD12D7400527199 /* Module */,
-				A19F47EA1FD12D7400527199 /* Public */,
 				A19F47EB1FD12D7400527199 /* Utils */,
 			);
 			path = ZPHome;
@@ -226,8 +262,12 @@
 		A19F47E31FD12D7400527199 /* Biz */ = {
 			isa = PBXGroup;
 			children = (
+				7804695D1FD59B0200FF3D1D /* TchaikovskyExample2.m4a */,
+				7804695A1FD58F6200FF3D1D /* jingmeng.mp3 */,
+				780469591FD58F6100FF3D1D /* Organ.wav */,
 				A19F47E41FD12D7400527199 /* ZPHomeViewController.h */,
 				A19F47E51FD12D7400527199 /* ZPHomeViewController.m */,
+				788FA8E91FD581720012BE64 /* ZPRingtone-Bridging-Header.h */,
 			);
 			path = Biz;
 			sourceTree = "<group>";
@@ -260,13 +300,6 @@
 			children = (
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		A19F47EA1FD12D7400527199 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Public;
 			sourceTree = "<group>";
 		};
 		A19F47EB1FD12D7400527199 /* Utils */ = {
@@ -319,7 +352,8 @@
 				TargetAttributes = {
 					78ECC4A91FD0457A005ED434 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -346,9 +380,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7804695C1FD58F6200FF3D1D /* jingmeng.mp3 in Resources */,
 				A19F47F41FD130B100527199 /* 1@2x.png in Resources */,
 				78ECC4BA1FD0457A005ED434 /* LaunchScreen.storyboard in Resources */,
+				7804695B1FD58F6200FF3D1D /* Organ.wav in Resources */,
 				78ECC4B71FD0457A005ED434 /* Assets.xcassets in Resources */,
+				780469641FD59C7A00FF3D1D /* TchaikovskyExample2.m4a in Resources */,
 				A19F47FE1FD1376500527199 /* ZPSTabbarConfigs.plist in Resources */,
 				A19F47F51FD130B300527199 /* 2@2x.png in Resources */,
 			);
@@ -418,9 +455,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19F47F01FD12F4600527199 /* ZPSTabBarViewController.m in Sources */,
+				788FA8FF1FD584E20012BE64 /* FDWaveformView.swift in Sources */,
+				780469631FD59C0F00FF3D1D /* ZPHomeViewController.m in Sources */,
+				788FA9011FD584E20012BE64 /* FDWaveformRenderOperation.swift in Sources */,
 				A19F47EF1FD12EDF00527199 /* CTMediator+ZPCommon.m in Sources */,
-				A19F47F31FD12F7100527199 /* ZPHomeViewController.m in Sources */,
+				788FA9001FD584E20012BE64 /* FDAudioContext.swift in Sources */,
 				A19F47F11FD12F5D00527199 /* ZPNavigationController.m in Sources */,
+				788FA8FB1FD583D60012BE64 /* IMXAudioFileManager.m in Sources */,
 				A19F47F21FD12F6600527199 /* ZPBaseViewController.m in Sources */,
 				A19F47EC1FD12EAB00527199 /* ZPSTabBarLaunchService.m in Sources */,
 				78ECC4BD1FD0457A005ED434 /* main.m in Sources */,
@@ -551,7 +592,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -563,6 +606,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pan.ZPRingtone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZPRingtone/ZPHome/Biz/ZPRingtone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -573,7 +620,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -585,6 +634,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pan.ZPRingtone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZPRingtone/ZPHome/Biz/ZPRingtone-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
