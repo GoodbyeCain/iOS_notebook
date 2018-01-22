@@ -25,9 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.view addSubview:self.waveView];
+    
     [[self navigationController] setNavigationBarHidden:YES animated:NO];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"TchaikovskyExample2" ofType:@"m4a"];
-    NSURL *url = [[NSURL alloc] initWithString:path];
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"jingmeng" withExtension:@"mp3"];//[[NSURL alloc] initFileURLWithPath:path];
     self.waveView.audioURL = url;
 //    [self.audioManager playAudioFile:url postionBlock:^(CGFloat pos, CGFloat max) {
 //        
@@ -56,11 +59,6 @@
 - (FDWaveformView *)waveView{
     if(!_waveView){
         _waveView = [[FDWaveformView alloc] initWithFrame:CGRectMake(20, 200, IMX_SCREEN_WIDTH_UIKIT-40, 400)];
-        _waveView.alpha = 0.0;
-        _waveView.doesAllowScrubbing = true;
-        _waveView.doesAllowStretch = true;
-        _waveView.doesAllowScroll = true;
-    
     }
     return _waveView;
 }

@@ -42,7 +42,7 @@ struct FDWaveformRenderFormat {
 }
 
 /// Operation used for rendering waveform images
-@objc public class FDWaveformRenderOperation: Operation {
+final public class FDWaveformRenderOperation: Operation {
     
     /// The audio context used to build the waveform
     let audioContext: FDAudioContext
@@ -150,7 +150,6 @@ struct FDWaveformRenderFormat {
             targetSamples > 0,
             let reader = try? AVAssetReader(asset: audioContext.asset)
             else { return nil }
-        
         reader.timeRange = CMTimeRange(start: CMTime(value: Int64(slice.lowerBound), timescale: audioContext.asset.duration.timescale),
                                        duration: CMTime(value: Int64(slice.count), timescale: audioContext.asset.duration.timescale))
         let outputSettingsDict: [String : Any] = [
@@ -180,9 +179,9 @@ struct FDWaveformRenderFormat {
         var sampleBuffer = Data()
         
         // 16-bit samples
-        reader.startReading()
-        defer { reader.cancelReading() } // Cancel reading if we exit early if operation is cancelled
         
+        let _ = reader.startReading()
+        defer { reader.cancelReading() } // Cancel reading if we exit early if operation is cancelled
         while reader.status == .reading {
             guard !isCancelled else { return nil }
             

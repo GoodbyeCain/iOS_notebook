@@ -3,9 +3,8 @@
 //
 import UIKit
 import AVFoundation
-
 /// Holds audio information used for building waveforms
- final class FDAudioContext{
+final class FDAudioContext {
     
     /// The audio asset URL used to load the context
     public let audioURL: URL
@@ -24,17 +23,19 @@ import AVFoundation
         self.totalSamples = totalSamples
         self.asset = asset
         self.assetTrack = assetTrack
+        
     }
     
-     public static func load(fromAudioURL audioURL: URL, completionHandler: @escaping (_ audioContext: FDAudioContext?) -> ()) {
+    public static func load(fromAudioURL audioURL: URL, completionHandler: @escaping (_ audioContext: FDAudioContext?) -> ()) {
         let asset = AVURLAsset(url: audioURL, options: [AVURLAssetPreferPreciseDurationAndTimingKey: NSNumber(value: true as Bool)])
-
+        
         guard let assetTrack = asset.tracks.first else {
             NSLog("FDWaveformView failed to load AVAssetTrack")
             completionHandler(nil)
             return
         }
-        asset.loadValuesAsynchronously(forKeys: ["tracks","duration"]) {
+        
+        asset.loadValuesAsynchronously(forKeys: ["duration"]) {
             var error: NSError?
             let status = asset.statusOfValue(forKey: "duration", error: &error)
             switch status {

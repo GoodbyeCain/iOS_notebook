@@ -29,6 +29,7 @@
 		A19F47FC1FD136D800527199 /* IMXBaseCpt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19F47FB1FD136D800527199 /* IMXBaseCpt.framework */; };
 		A19F47FD1FD136D800527199 /* IMXBaseCpt.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A19F47FB1FD136D800527199 /* IMXBaseCpt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A19F47FE1FD1376500527199 /* ZPSTabbarConfigs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A19F47D01FD12D6C00527199 /* ZPSTabbarConfigs.plist */; };
+		A1EA55911FD8EBA9003354EF /* DemoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA55901FD8EBA9003354EF /* DemoTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,7 @@
 		A19F47ED1FD12EDF00527199 /* CTMediator+ZPCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+ZPCommon.h"; sourceTree = "<group>"; };
 		A19F47EE1FD12EDF00527199 /* CTMediator+ZPCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+ZPCommon.m"; sourceTree = "<group>"; };
 		A19F47FB1FD136D800527199 /* IMXBaseCpt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMXBaseCpt.framework; sourceTree = "<group>"; };
+		A1EA55901FD8EBA9003354EF /* DemoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTest.swift; sourceTree = "<group>"; };
 		FD8298BC78D1FE45DC69E9A2 /* libPods-ZPRingtone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZPRingtone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -268,6 +270,7 @@
 				A19F47E41FD12D7400527199 /* ZPHomeViewController.h */,
 				A19F47E51FD12D7400527199 /* ZPHomeViewController.m */,
 				788FA8E91FD581720012BE64 /* ZPRingtone-Bridging-Header.h */,
+				A1EA55901FD8EBA9003354EF /* DemoTest.swift */,
 			);
 			path = Biz;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				788FA8FB1FD583D60012BE64 /* IMXAudioFileManager.m in Sources */,
 				A19F47F21FD12F6600527199 /* ZPBaseViewController.m in Sources */,
 				A19F47EC1FD12EAB00527199 /* ZPSTabBarLaunchService.m in Sources */,
+				A1EA55911FD8EBA9003354EF /* DemoTest.swift in Sources */,
 				78ECC4BD1FD0457A005ED434 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +613,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZPRingtone/ZPHome/Biz/ZPRingtone-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -636,7 +640,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZPRingtone/ZPHome/Biz/ZPRingtone-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

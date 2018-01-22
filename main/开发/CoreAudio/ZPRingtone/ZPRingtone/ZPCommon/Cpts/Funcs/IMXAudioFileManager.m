@@ -32,6 +32,8 @@
         self.baseView = baseView;
         self.frame = frame;
         [self.baseView addSubview:self.audioPlot];
+        AKAudioFile *file;
+        [AKAudioFile ]
     }
     return self;
 }

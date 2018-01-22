@@ -1,4 +1,4 @@
-# 提要
+## 提要
 1. 所有规范（试行）基于苹果官方[编码准则](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)。若有冲突之处，以官方为主。
 
 ## 目录
@@ -17,7 +17,7 @@
 * **变量和属性:**遵循小驼峰规则，且`*`紧跟变量
 
 	> 1. NSString *userName;
-	> 2. @property (nonatimic, Strong) NSString *nickName;
+	> 2. @property (nonatimic, strong) NSString *nickName;
 	> 3. 临时变量禁止使用下划线开头！因为Default Synthesis生成的成员变量就是下划线打头的，避免可能存在的冲突！
 
 * **属性的访问:**需使用点语法执行
@@ -25,7 +25,7 @@
 	
 * **方法的访问:**需使用方括号访问
 
-	> count = [_userName length];
+	> count = [self.userName length];
 	
 * **类名:**遵循大驼峰式命名法，需要带上前缀。
 
@@ -197,6 +197,7 @@
 * **m文件:**布局方案详细
 	> 1. 文件说明与头文件包含(#import)之间空1行
 	> 2. 头文件包含(#import)之间，如果需要分类区别，各类别之间空1行
+	
 	> 3. 方法与方法之间空1行
 	
 	
@@ -261,6 +262,6 @@
 
 	
 # Ⅲ、<span id = "Ⅲ">TODO：</span>
-后续需要继续完善的部分
+后续需要继续完善的部分（红色分支）：
 
 ![pic](规范V1.0.png)
