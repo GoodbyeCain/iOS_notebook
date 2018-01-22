@@ -16,6 +16,10 @@
 		788FA8FF1FD584E20012BE64 /* FDWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FA8FC1FD584E20012BE64 /* FDWaveformView.swift */; };
 		788FA9001FD584E20012BE64 /* FDAudioContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FA8FD1FD584E20012BE64 /* FDAudioContext.swift */; };
 		788FA9011FD584E20012BE64 /* FDWaveformRenderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FA8FE1FD584E20012BE64 /* FDWaveformRenderOperation.swift */; };
+		78D9D0CC1FD6D9A30096B177 /* IMXWaveFormManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9D0CB1FD6D9A30096B177 /* IMXWaveFormManager.swift */; };
+		78D9D0CF1FD825570096B177 /* IMXClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9D0CE1FD825570096B177 /* IMXClipView.m */; };
+		78D9D0D11FDBF6C40096B177 /* IMXAudioClipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9D0D01FDBF6C40096B177 /* IMXAudioClipManager.swift */; };
+		78D9D0D31FDC29320096B177 /* jingmeng.caf in Resources */ = {isa = PBXBuildFile; fileRef = 78D9D0D21FDC29320096B177 /* jingmeng.caf */; };
 		78ECC4B71FD0457A005ED434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ECC4B61FD0457A005ED434 /* Assets.xcassets */; };
 		78ECC4BA1FD0457A005ED434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ECC4B81FD0457A005ED434 /* LaunchScreen.storyboard */; };
 		78ECC4BD1FD0457A005ED434 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ECC4BC1FD0457A005ED434 /* main.m */; };
@@ -58,6 +62,11 @@
 		788FA8FC1FD584E20012BE64 /* FDWaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDWaveformView.swift; sourceTree = "<group>"; };
 		788FA8FD1FD584E20012BE64 /* FDAudioContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDAudioContext.swift; sourceTree = "<group>"; };
 		788FA8FE1FD584E20012BE64 /* FDWaveformRenderOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDWaveformRenderOperation.swift; sourceTree = "<group>"; };
+		78D9D0CB1FD6D9A30096B177 /* IMXWaveFormManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMXWaveFormManager.swift; sourceTree = "<group>"; };
+		78D9D0CD1FD825570096B177 /* IMXClipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMXClipView.h; sourceTree = "<group>"; };
+		78D9D0CE1FD825570096B177 /* IMXClipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMXClipView.m; sourceTree = "<group>"; };
+		78D9D0D01FDBF6C40096B177 /* IMXAudioClipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMXAudioClipManager.swift; sourceTree = "<group>"; };
+		78D9D0D21FDC29320096B177 /* jingmeng.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jingmeng.caf; sourceTree = "<group>"; };
 		78ECC4AA1FD0457A005ED434 /* ZPRingtone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPRingtone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ECC4B61FD0457A005ED434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78ECC4B91FD0457A005ED434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -222,6 +231,8 @@
 			children = (
 				788FA8F91FD583D60012BE64 /* IMXAudioFileManager.h */,
 				788FA8FA1FD583D60012BE64 /* IMXAudioFileManager.m */,
+				78D9D0CB1FD6D9A30096B177 /* IMXWaveFormManager.swift */,
+				78D9D0D01FDBF6C40096B177 /* IMXAudioClipManager.swift */,
 			);
 			path = Funcs;
 			sourceTree = "<group>";
@@ -229,6 +240,8 @@
 		A19F47DC1FD12D6C00527199 /* UIs */ = {
 			isa = PBXGroup;
 			children = (
+				78D9D0CD1FD825570096B177 /* IMXClipView.h */,
+				78D9D0CE1FD825570096B177 /* IMXClipView.m */,
 			);
 			path = UIs;
 			sourceTree = "<group>";
@@ -264,6 +277,7 @@
 		A19F47E31FD12D7400527199 /* Biz */ = {
 			isa = PBXGroup;
 			children = (
+				78D9D0D21FDC29320096B177 /* jingmeng.caf */,
 				7804695D1FD59B0200FF3D1D /* TchaikovskyExample2.m4a */,
 				7804695A1FD58F6200FF3D1D /* jingmeng.mp3 */,
 				780469591FD58F6100FF3D1D /* Organ.wav */,
@@ -383,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D9D0D31FDC29320096B177 /* jingmeng.caf in Resources */,
 				7804695C1FD58F6200FF3D1D /* jingmeng.mp3 in Resources */,
 				A19F47F41FD130B100527199 /* 1@2x.png in Resources */,
 				78ECC4BA1FD0457A005ED434 /* LaunchScreen.storyboard in Resources */,
@@ -464,11 +479,14 @@
 				A19F47EF1FD12EDF00527199 /* CTMediator+ZPCommon.m in Sources */,
 				788FA9001FD584E20012BE64 /* FDAudioContext.swift in Sources */,
 				A19F47F11FD12F5D00527199 /* ZPNavigationController.m in Sources */,
+				78D9D0CC1FD6D9A30096B177 /* IMXWaveFormManager.swift in Sources */,
 				788FA8FB1FD583D60012BE64 /* IMXAudioFileManager.m in Sources */,
+				78D9D0D11FDBF6C40096B177 /* IMXAudioClipManager.swift in Sources */,
 				A19F47F21FD12F6600527199 /* ZPBaseViewController.m in Sources */,
 				A19F47EC1FD12EAB00527199 /* ZPSTabBarLaunchService.m in Sources */,
 				A1EA55911FD8EBA9003354EF /* DemoTest.swift in Sources */,
 				78ECC4BD1FD0457A005ED434 /* main.m in Sources */,
+				78D9D0CF1FD825570096B177 /* IMXClipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

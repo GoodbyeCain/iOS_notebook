@@ -7,18 +7,10 @@
 //
 
 #import "IMXAudioFileManager.h"
-#import <AudioKit/AudioKit.h>
-#import <AudioKitUI/AudioKitUI.h>
 #import <Masonry/Masonry.h>
 
 @interface IMXAudioFileManager()<EZAudioPlayerDelegate>
-@property (nonatomic,strong) EZAudioPlayer *audioPlayer;
-@property (nonatomic,strong) EZAudioFile * audioFile;
-@property (nonatomic,strong) EZAudioPlot * audioPlot;
 @property (nonatomic,copy) imx_audio_posBlock posBlock;
-
-@property (nonatomic,strong)UIView *baseView;
-@property (nonatomic,assign)CGRect frame;
 @end
 
 @implementation IMXAudioFileManager
@@ -26,17 +18,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 #pragma mark ======  public  ======
-- (instancetype)initWithBaseView:(UIView *)baseView plot:(CGRect)frame{
-    self = [self init];
-    if(self){
-        self.baseView = baseView;
-        self.frame = frame;
-        [self.baseView addSubview:self.audioPlot];
-        AKAudioFile *file;
-        [AKAudioFile ]
-    }
-    return self;
-}
 /**
  播放文件并展示效果
  
@@ -64,11 +45,6 @@
     }
     self.posBlock = block;
     self.audioFile = [EZAudioFile audioFileWithURL:fileURL];
-    weakify(self);
-    [self.audioFile getWaveformDataWithCompletionBlock:^(float **waveformData, int length) {
-        strongify(self);
-        [self.audioPlot updateBuffer:waveformData[0] withBufferSize:length];
-    }];
     [self.audioPlayer setAudioFile:self.audioFile];
 }
 //拖拽至特定播放位置
@@ -108,17 +84,10 @@
  withNumberOfChannels:(UInt32)numberOfChannels
           inAudioFile:(EZAudioFile *)audioFile
 {
-    weakify(self);
-    dispatch_async(dispatch_get_main_queue(), ^{
-        strongify(self);
-        [self.audioPlot updateBuffer:buffer[0]
-                      withBufferSize:bufferSize];
-        CGFloat length = self.audioFile.totalFrames/4040.0;///self.audioFile.fileFormat.mChannelsPerFrame;//[EZAudioFile defaultClientFormatSampleRate]/10.0;
-        [self.audioPlot setRollingHistoryLength:length];
-        //self.audioFile.fileFormat.mSampleRate:44100  8348544
-        //self.audioFile.fileFormat.mFramesPerPacket:1152
-        
-    });
+//    weakify(self);
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        strongify(self);
+//    });
 }
 - (void)audioPlayer:(EZAudioPlayer *)audioPlayer
     updatedPosition:(SInt64)framePosition
@@ -165,21 +134,9 @@
                                                object:self.audioPlayer];
 }
 #pragma mark ======  getter & setter  ======
-- (void)setPlotLength:(CGFloat)plotLength{
-    _plotLength = plotLength;
-    [self.audioPlot setRollingHistoryLength:_plotLength];
-}
 - (void)setPlayVolumn:(CGFloat)playVolume{
     _playVolume = playVolume;
     [self.audioPlayer setVolume:_playVolume];
-}
-- (void)setPlotBackColor:(UIColor *)plotBackColor{
-    _plotBackColor = plotBackColor;
-    self.audioPlot.backgroundColor = plotBackColor;
-}
-- (void)setPlotColor:(UIColor *)plotColor{
-    _plotColor = plotColor;
-    self.audioPlot.color = _plotColor;
 }
 - (EZAudioPlayer *)audioPlayer{
     if(!_audioPlayer){
@@ -187,18 +144,6 @@
         _audioPlayer.shouldLoop = NO;
     }
     return _audioPlayer;
-}
-- (EZAudioPlot *)audioPlot{
-    if(!_audioPlot){
-        _audioPlot = [[EZAudioPlot alloc] initWithFrame:self.frame];
-        _audioPlot.shouldFill = YES;
-        _audioPlot.shouldMirror = YES;
-        _audioPlot.plotType = EZPlotTypeRolling;
-        _audioPlot.shouldCenterYAxis = YES;
-        _audioPlot.gain = 1;
-        
-    }
-    return _audioPlot;
 }
 
 @end

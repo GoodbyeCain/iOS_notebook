@@ -11,7 +11,7 @@ import Accelerate
 // see http://stackoverflow.com/questions/3514066/how-to-tint-a-transparent-png-image-in-iphone
 /// A view for rendering audio waveforms
 /*@IBDesignable*/ // IBDesignable support in XCode is so broken it's sad
-@objc open class FDWaveformView: UIView {
+open class FDWaveformView: UIView {
     /// A delegate to accept progress reporting
     /*@IBInspectable*/ open weak var delegate: FDWaveformViewDelegate?
     
