@@ -39,6 +39,7 @@
 3. 内容元素如按钮避开屏幕角落和传感器槽，防止被切割。
 5. 屏幕边缘手势
 6. 适应不同的屏幕宽高比（横向、纵向）
+7. 其中针对SafeArea，目前做了工具[IMXSafeAreaKit](https://github.com/PanZhow/IMXUIsCpt/tree/master/IMXUIsCpt/Utils/IMXSafeAreaKit):实现了safearea的获取，本地保存等定制功能。
 
 #### 2. 相册访问权限变更
 
@@ -52,7 +53,8 @@
 
 	> iOS 11.0+,automaticallyAdjustsScrollViewInsets废弃，新增contentInsetAdjustmentBehavior。
 	
-* 在iOS11.0+：cell.contentview会和cell自身大小有变化，做了切割
+* 在iOS11.0+：cell.contentview会和cell自身大小有变化，做了切割。
+
 
 
 ## 四、code snippets

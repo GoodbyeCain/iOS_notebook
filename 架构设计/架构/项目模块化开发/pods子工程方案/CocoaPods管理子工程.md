@@ -172,7 +172,7 @@ Obj-C项目开发中，我们引入和使用三方库，使用技术最多的便
   # s.dependency   = "AFNetworking" # 依赖库
   
   # User
-  s.author             = { "BY" => "2331838272@163.com" } # 作者信息
+  s.author             = { "BY" => "2331838272@qq.com" } # 作者信息
   s.social_media_url   = "http://****" # 个人主页
 
 	end
@@ -208,8 +208,8 @@ Obj-C项目开发中，我们引入和使用三方库，使用技术最多的便
 
 	若出现警告问题，最好不要使用`pod lib lint --allow-warnings`忽略警告，解决方案：
 
-	> 1. 发生警告的代码片段以`#pragma clang diagnostic push
-#pragma clang diagnostic ignored "**"`和`#pragma clang diagnostic pop`包裹起来。
+	> 1. 发生警告的代码片段以```#pragma clang diagnostic push
+#pragma clang diagnostic ignored "**"`和`#pragma clang diagnostic pop```包裹起来。
 	> 2. 在podspec中将该模块设置为`s.compiler_flags = '**'`即可。
 
 ## TODO：
