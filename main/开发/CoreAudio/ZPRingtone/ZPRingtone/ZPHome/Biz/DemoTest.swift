@@ -10,7 +10,7 @@ import Foundation
 import AudioKit
 @objc class DemoTest: NSObject{
     func testDemo()  {
-        let file: AKAudioFile
+        let _: AKAudioFile
         
         
     }

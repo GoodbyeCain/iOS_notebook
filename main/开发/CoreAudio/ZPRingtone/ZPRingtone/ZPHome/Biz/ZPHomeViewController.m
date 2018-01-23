@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view addSubview:self.waveView];
+    //[self.view addSubview:self.waveView];
     
     [[self navigationController] setNavigationBarHidden:YES animated:NO];
     [self configUIs];
@@ -109,12 +109,12 @@
     }
     return _audioManager;
 }
-- (FDWaveformView *)waveView{
-    if(!_waveView){
-        _waveView = [[FDWaveformView alloc] initWithFrame:CGRectMake(20, 200, IMX_SCREEN_WIDTH_UIKIT-40, 400)];
-    }
-    return _waveView
-}
+//- (FDWaveformView *)waveView{
+//    if(!_waveView){
+//        _waveView = [[FDWaveformView alloc] initWithFrame:CGRectMake(20, 200, IMX_SCREEN_WIDTH_UIKIT-40, 400)];
+//    }
+//    return _waveView
+//}
 - (IMXWaveFormManager *)waveformManager{
     if(!_waveformManager){
         _waveformManager = [[IMXWaveFormManager alloc] initWithWaveFrame:CGRectMake(20, 200, IMX_SCREEN_WIDTH_UIKIT-40, 60) baseView:self.view waveColor:[UIColor grayColor] proColor:[UIColor darkGrayColor]];
