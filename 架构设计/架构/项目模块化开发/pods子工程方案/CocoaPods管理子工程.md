@@ -105,6 +105,12 @@ Obj-C项目开发中，我们引入和使用三方库，使用技术最多的便
 	
 2. 处理子工程相关配置：具体参考[iOS子工程模板搭建]()。
 3. pods文件.swift-version生成和配置
+
+	> 1. touch .swift-version
+	> 2. open .swift-version
+	> 3. 输入：echo "3.0" > .swift-version
+	
+
 4. pods文件podspec生成和配置：
 
 	> * cd 项目目录，执行：pod spec create IMXFuncCptPodspec
