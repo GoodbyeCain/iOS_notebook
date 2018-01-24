@@ -57,16 +57,25 @@ Obj-C项目开发中，我们引入和使用三方库，使用技术最多的便
 #### 1. 图谱预览：
 
    ![imgs](imgs/主工程结构.png)
+   ![imgs](imgs/pods子工程架构图.png)
 
-
-* 针对图谱2中所示的资源，现放置于Github中，列出如下：
+* 针对图谱2中所示的资源，均放置于Github中，列出如下：
   
-  1. [IMXMatrixProj](https://github.com/PanZhow/IMXMatrixProj):Object-C子工程脚手架。
-  2. [IMXProject](https://github.com/PanZhow/IMXProject):Object-C主工程模板项目，基于其上派生实用项目。
+  1. [IMXProject](https://github.com/PanZhow/IMXProject):Object-C主工程模板项目，基于其上派生实用项目。（修改项目名即可）
+ 	> * git clone之后，需要重置git关联、修改项目名，完善主调度模块等步骤，便完成了一个新的空项目project的初始化。
+  	
+  2. [IMXMatrixProj](https://github.com/PanZhow/IMXMatrixProj):Object-C子工程脚手架。基于其上派生功能组件、业务模块。
+	> * 通过内置脚本生成子工程、修改子工程的若干配置，即可完成初始化配置。
+	> * 配置组件，完善功能后，则交由cocoaPods来管理，这也是本文主要讲述的内容。
+	> * 配置模块，完善功能后，使用Git submodule子模块来管理较为合适，后续完善。
+	
   3. [IMXPodsRepo](https://github.com/PanZhow/IMXPodsRepo):私有Repo版本库。
+  	> * CocoaPods配置文件：主要记录私有Pods组件。
+  	> * 若后续进行Swift项目开发，则使用Carthage或swift package manager技术，该部分会有不同。
   4. [IMXFuncCpt](https://github.com/PanZhow/IMXFuncCpt):基础功能组件，即一系列通用功能的组合。
   5. [IMXUIsCpt](https://github.com/PanZhow/IMXUIsCpt):控件类组件集合，即包含UIs工具、以及UIs控件。
-  6. 待添加……
+  6. DebugModule组件。（图谱未提及）
+  7. 待添加……
 
 	
 	
