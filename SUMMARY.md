@@ -121,7 +121,7 @@
         * 机型屏幕适配规范
     * [代码规范](规范/代码规范/index.md)
         * [Obj-C规范](规范/代码规范/Obj-C规范.md)
-        * [Swift规范]()
+        * [Swift规范1：linkedin代码规范译文](规范/代码规范/swfit/Swift-linkedin译文.md)
     * [UED规范](规范/UED规范/index.md)
 
 -----
