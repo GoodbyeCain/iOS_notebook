@@ -3,7 +3,7 @@
 1. 解释性语言
 
 
-## 2. 安装
+## 2. 安装（与系统python版本共存）
 
 1. 安装Homebrew：
 
@@ -22,8 +22,10 @@
 	> 测试：which -a python 检测python共存情况。
 	
 	
-4. 设定PATH路径信息：
 
-	> sudo emacs /etc/paths
+3. IDE：PyCharm
+
+	> 1. 默认最新python版本
+	> 2. 默认安装pip
 	
 	
