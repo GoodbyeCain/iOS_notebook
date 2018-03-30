@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/zhoupanpan/testLibs/demos/QBDemo/venv"
+set -gx VIRTUAL_ENV "/Users/zhoupanpan/info/iOS_notebook/main/开发/crawlerDemo/QBDemo/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

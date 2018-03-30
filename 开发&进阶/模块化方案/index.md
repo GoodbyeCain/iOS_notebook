@@ -8,3 +8,4 @@
 * [封装静态库&bundle](封装静态库&bundle/index.md)
 * [APP功能服务化组件开发](App功能服务化/APP功能服务化组件开发.md)
 * [APPLaucher启动组件开发](App功能服务化/APPLaucher启动组件开发.md)
+* [IMXEventBus通信组件](IMXEventBus通信组件/IMXEventBus.md)

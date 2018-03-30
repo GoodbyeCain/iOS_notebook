@@ -33,6 +33,7 @@
         * [封装静态库&bundle](开发&进阶/模块化方案/封装静态库&bundle/index.md)
         * [APP功能服务化组件开发](开发&进阶/模块化方案/App功能服务化/APP功能服务化组件开发.md)
         * [APPLaucher启动组件开发](开发&进阶/模块化方案/App功能服务化/APPLaucher启动组件开发.md)
+        * [IMXEventBus通信组件](开发&进阶/模块化方案/IMXEventBus通信组件/IMXEventBus.md)
     * [填坑笔记](开发&进阶/填坑笔记/index.md)
     	 * [UIKit相关](开发&进阶/填坑笔记/UIKit相关.md)
     	 * [Object相关](开发&进阶/填坑笔记/Object相关.md)

@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/zhoupanpan/testLibs/demos/QBDemo/venv"
+VIRTUAL_ENV="/Users/zhoupanpan/info/iOS_notebook/main/开发/crawlerDemo/QBDemo/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
