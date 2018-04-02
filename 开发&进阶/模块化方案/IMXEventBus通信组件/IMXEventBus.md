@@ -7,12 +7,15 @@
 * 生命周期管理：注册的事件订阅者可自动释放，也可手动管理其释放时机。
 * 优先级处理：触发事件时，通过预设值的优先级，决定执行订阅者回调的先后顺序。
 * 订阅者回调在主线程/非主线程执行的控制。
+* Debug模式下：增加输出所有Event信息。
 
 
 ## #如何使用：
 
 ### 1.）导入：
 1. Cocoapods：pod 'IMXEventBus', '~> 1.0.0'
+
+	> [github地址](https://github.com/PanZhow/IMXEventBus)
 
 2. 手动导入：本库无依赖其它三方库，直接将`IMXEventBus`文件夹拖入项目即可。
 
@@ -27,20 +30,20 @@
 
 1. 简略模式：
 
-
 	```
-//默认值：
-//优先级:Default;回调执行：非主线程
-[IMXEventSubscriber addTarget:self name:@"login_eventName" action:^(IMXEventUserInfo *info) {
-        NSLog(@"callback info:%@    thread:%@",[info description],[NSThread currentThread]);
+	
+	//默认值：
+	//优先级:Default;回调执行：非主线程
+	[IMXEventSubscriber addTarget:self name:@"login_eventName" 	action:^(IMXEventUserInfo *info) {
+        NSLog(@"callback info:%@    thread:%@",[info description],	[NSThread currentThread]);
     }];
 
 	```
 
 2. 全参模式：
 
-
 	```
+	
 	[IMXEventSubscriber addTarget:self name:@"login_eventName" priority:IMXEventSubscriberPriorityDefault inMainTread:YES action:^(IMXEventUserInfo *info) {
 		NSLog(@"callback info:%@    thread:%@",[info description],[NSThread currentThread]);
     }];
@@ -54,18 +57,19 @@
 
 1. 简略模式：
 
-
 	```
-//默认值：
-//被触发的事件：不强制在主线程中执行回调
-[IMXEventPoster postEventName:@"login_eventName" object:@{@"userName":@"demo"}];
+	
+	//默认值：
+	//被触发的事件：不强制在主线程中执行回调
+	[IMXEventPoster postEventName:@"login_eventName" 	object:@{@"userName":@"demo"}];
 
 	```
 	
 2. 全参模式：
 
 	```
-[IMXEventPoster postEventName:@"login_eventName" object:nil forceMain:YES];
+	
+	[IMXEventPoster postEventName:@"login_eventName" object:nil forceMain:YES];
 
 	```
 	
@@ -77,6 +81,9 @@
 
 	1. 重复添加target对应的同一事件时，会打印或者弹出log提示。
 	2. post时，无对应的监听者存在，会打印或者弹出log提示。
+	3. Debug模式下：输出所有Event信息。（便于检测当前无订阅者的僵尸事件以及未被触发的事件）
+
+		> 注：仅输出之前的Event调用情况，无法检测输出之后的log，故输出的数目不代表最终数据。
 
 2. 开启Debug功能：默认不开启。
 
@@ -97,15 +104,15 @@
 
 图谱1：类图结构
 
-![img](docs/imgs/IMXEventBus类图.png)
+![img](imgs/IMXEventBus类图.png)
 
 图谱2：事件注册流程图
 
-![img](docs/imgs/IMXEventBus注册监听.png)
+![img](imgs/IMXEventBus注册监听.png)
 
 图谱3：事件触发流程图
 
-![img](docs/imgs/IMXEventBus触发.png)
+![img](imgs/IMXEventBus触发.png)
 
 ## #结构描述：
 
@@ -206,3 +213,13 @@
 * [https://github.com/cesarferreira/SwiftEventBus](https://github.com/cesarferreira/SwiftEventBus)
 * [https://github.com/aixinyunchou/OCEventBus](https://github.com/aixinyunchou/OCEventBus)
 * [https://github.com/goodow/GDChannel](https://github.com/goodow/GDChannel)
+
+## #更新Pods开源库
+
+1. 提交code至github，或改version或保持不变（更改版本时不需要第3步骤）。
+2. pod trunk register <email@XX.com> '<name>' --description='<description>'
+3. pod trunk delete IMXEventBus 1.0.0
+4. pod trunk push --allow-warnings
+5. 使用时：pod setup更新
+
+参考链接：[https://www.jianshu.com/p/d6beddcce8bb](https://www.jianshu.com/p/d6beddcce8bb)
