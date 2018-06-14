@@ -1,4 +1,4 @@
-## raywenderlich.comg官方Swift规范
+## raywenderlich.com官方Swift规范
 
 **以Swift3为基准更新**
 

@@ -3,6 +3,7 @@
 ## 目录
 
 * [UIAlertContrller](#UIAlertContrller)
+* [UIPanGestureRecognizer定位](#UIPanGestureRecognizer定位)
 
 ## <span id = "UIAlertContrller"> UIAlertContrller </span>
 
@@ -17,3 +18,10 @@
         }
    baseCtrl?.present(alert, animated: true, completion: nil)
 	```
+	
+## <span id = "UIPanGestureRecognizer定位"> UIPanGestureRecognizer定位 </span>
+
+1. translationInView : 手指在视图上移动的位置（x,y）向下和向右为正，向上和向左为负。
+2. locationInView ： 手指在视图上的位置（x,y）就是手指在视图本身坐标系的位置。
+3. velocityInView： 手指在视图上移动的速度（x,y）, 正负也是代表方向，值得一体的是在绝对值上|x| > |y| 水平移动， |y|>|x| 竖直移动。
+
